@@ -1,0 +1,50 @@
+﻿@import '../Styles/fonts.css';
+
+body {
+    font-family: iran-sans;
+    font-size: 16px;
+    direction: rtl;
+}
+
+.create-exam {
+    background-image: url('../Media/Images/create-exam-bg.jpg');
+    background-size: cover;
+    background-position-y: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.create-exam-content {
+    position: relative;
+    top: 100px;
+}
+
+.create-exam-title {
+    background-color: rgb(254,184,1);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.create-exam-form {
+    padding: 10px;
+    backdrop-filter:blur(6px);
+}
+
+.exam-input-group {
+    border: thin solid white;
+    padding:8px;
+}
+
+    .exam-input-group input {
+        background-color: transparent;
+        border: none;
+        color:white;
+
+    }
+
+        .exam-input-group input:focus-visible {
+            outline: none !important;
+        }
