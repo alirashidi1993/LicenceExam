@@ -9,9 +9,10 @@ namespace LicenceExam
 {
     public partial class Exam : System.Web.UI.Page
     {
+        public string targetView;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            targetView = Request.QueryString["view"];
         }
     }
 }

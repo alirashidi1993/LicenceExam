@@ -7,29 +7,38 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LicenceExam
+namespace LicenceExam.Components
 {
 
 
-    public partial class Exam
+    public partial class GridExam
     {
 
         /// <summary>
-        /// ExamGridView control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::LicenceExam.Components.GridExam ExamGridView;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// ExamCreateView control.
+        /// txt_search control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::LicenceExam.Components.CreateExam ExamCreateView;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_search;
+
+        /// <summary>
+        /// grid_exams control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView grid_exams;
     }
 }

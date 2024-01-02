@@ -10,13 +10,14 @@
 namespace LicenceExam.Database
 {
     using System;
+    using System.Data.Common;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
     public partial class AzmoonEntities : DbContext
     {
         public AzmoonEntities()
-            : base("name=AzmoonEntities")
+            : base("Name=AzmoonEntities")
         {
         }
     
