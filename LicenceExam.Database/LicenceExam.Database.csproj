@@ -51,58 +51,59 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Answer.cs">
-      <DependentUpon>LicenceExamModel.tt</DependentUpon>
+      <DependentUpon>AzmoonModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AzmoonModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AzmoonModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AzmoonModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AzmoonModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AzmoonModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AzmoonModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Exam.cs">
-      <DependentUpon>LicenceExamModel.tt</DependentUpon>
+      <DependentUpon>AzmoonModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="LicenceExamModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LicenceExamModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="LicenceExamModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LicenceExamModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="LicenceExamModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LicenceExamModel.edmx</DependentUpon>
+    <Compile Include="ExamQuestion.cs">
+      <DependentUpon>AzmoonModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Question.cs">
-      <DependentUpon>LicenceExamModel.tt</DependentUpon>
+      <DependentUpon>AzmoonModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="LicenceExamModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>LicenceExamModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.Config" />
-    <None Include="LicenceExamModel.edmx.diagram">
-      <DependentUpon>LicenceExamModel.edmx</DependentUpon>
+    <EntityDeploy Include="AzmoonModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AzmoonModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="AzmoonModel.edmx.diagram">
+      <DependentUpon>AzmoonModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LicenceExamModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>LicenceExamModel.Context.cs</LastGenOutput>
-      <DependentUpon>LicenceExamModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="LicenceExamModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>LicenceExamModel.edmx</DependentUpon>
-      <LastGenOutput>LicenceExamModel.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="AzmoonModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AzmoonModel.edmx</DependentUpon>
+      <LastGenOutput>AzmoonModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="AzmoonModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AzmoonModel.edmx</DependentUpon>
+      <LastGenOutput>AzmoonModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

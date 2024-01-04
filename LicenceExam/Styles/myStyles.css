@@ -7,9 +7,6 @@ body {
 }
 
 .create-exam {
-    background-image: url('../Media/Images/driving-at-night.jpg');
-    background-size: cover;
-    background-position-y: center;
     width: 100%;
     height: 100vh;
 }
@@ -18,9 +15,9 @@ body {
     position: relative;
     top: 100px;
     border: thin solid #f9f9f9;
-    border-top:none;
-    border-radius:0px 0px 8px 8px;
-    overflow:hidden;
+    border-top: none;
+    border-radius: 0px 0px 8px 8px;
+    overflow: hidden;
 }
 
 .create-exam-title {
@@ -35,27 +32,15 @@ body {
 .create-exam-form {
     padding: 10px;
     backdrop-filter: blur(6px);
-    
 }
 
-.exam-input-group {
-    border: thin solid white;
-    padding: 8px;
+.exam-input-group label {
+    margin-bottom: 8px;
 }
 
-    .exam-input-group input {
-        background-color: transparent;
-        border: none;
-        color: white;
-    }
-
-        .exam-input-group input:focus-visible {
-            outline: none !important;
-        }
-
-    .exam-input-group label {
-        width: 100px;
-    }
+.exam-input-group input {
+    text-align: right;
+}
 
 .action-buttons {
     text-align: left;

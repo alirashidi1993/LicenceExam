@@ -17,7 +17,7 @@ namespace LicenceExam.Database
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Exam()
         {
-            this.Questions = new HashSet<Question>();
+            this.ExamQuestions = new HashSet<ExamQuestion>();
         }
     
         public long Id { get; set; }
@@ -27,6 +27,6 @@ namespace LicenceExam.Database
         public int Status { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Question> Questions { get; set; }
+        public virtual ICollection<ExamQuestion> ExamQuestions { get; set; }
     }
 }

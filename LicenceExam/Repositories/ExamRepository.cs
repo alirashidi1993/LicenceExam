@@ -69,5 +69,40 @@ namespace LicenceExam.Repositories
                 dbContext.SaveChanges();
             }
         }
+        public Database.Exam GetById(long id)
+        {
+            return dbContext.Exams.FirstOrDefault(e => e.Id == id);
+        }
+
+        public void UpdateExam(long id, string title, string startDate, string endDate)
+        {
+            Database.Exam azmoon = dbContext.Exams.FirstOrDefault(e => e.Id == id);
+            if (azmoon != null)
+            {
+                azmoon.Title = title;
+                azmoon.StartDate = Convert.ToDateTime(startDate);
+                azmoon.EndDate = Convert.ToDateTime(endDate);
+                dbContext.SaveChanges();
+            }
+        }
+
+        public void ActivateExam(long id)
+        {
+            Database.Exam azmoon = dbContext.Exams.FirstOrDefault(i => i.Id == id);
+            if(azmoon!=null)
+            {
+                azmoon.Status = (int)ExamStatus.Active;
+                dbContext.SaveChanges();
+            }
+        }
+        public void DeactivateExam(long id)
+        {
+            Database.Exam azmoon = dbContext.Exams.FirstOrDefault(i => i.Id == id);
+            if (azmoon != null)
+            {
+                azmoon.Status = (int)ExamStatus.InActive;
+                dbContext.SaveChanges();
+            }
+        }
     }
 }

@@ -18,17 +18,18 @@ namespace LicenceExam.Database
         public Question()
         {
             this.Answers = new HashSet<Answer>();
+            this.ExamQuestions = new HashSet<ExamQuestion>();
         }
     
         public long Id { get; set; }
         public string QuestionText { get; set; }
         public string ImageUrl { get; set; }
         public long CorrectAnswerId { get; set; }
-        public long ExamId { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Answer> Answers { get; set; }
         public virtual Answer Answer { get; set; }
-        public virtual Exam Exam { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ExamQuestion> ExamQuestions { get; set; }
     }
 }

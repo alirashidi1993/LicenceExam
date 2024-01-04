@@ -109,14 +109,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Components\CreateExam.ascx" />
+    <Content Include="Components\CreateQuestion.ascx" />
     <Content Include="Components\Footer.ascx" />
     <Content Include="Components\GridExam.ascx" />
+    <Content Include="Components\GridQuestion.ascx" />
     <Content Include="Components\Header.ascx" />
     <Content Include="Content\PersianDatePicker.css" />
     <Content Include="Content\PersianDatePicker.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="Exam.aspx" />
     <Content Include="Fonts\IRANSansWeb_Medium.ttf" />
+    <Content Include="ManageQuestions.aspx" />
     <Content Include="Media\Images\cancel.png" />
     <Content Include="Media\Images\create-exam-bg.jpg" />
     <Content Include="Media\Images\delete.png" />
@@ -164,6 +167,13 @@
     <Compile Include="Components\CreateExam.ascx.designer.cs">
       <DependentUpon>CreateExam.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Components\CreateQuestion.ascx.cs">
+      <DependentUpon>CreateQuestion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\CreateQuestion.ascx.designer.cs">
+      <DependentUpon>CreateQuestion.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Components\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -177,6 +187,13 @@
     </Compile>
     <Compile Include="Components\GridExam.ascx.designer.cs">
       <DependentUpon>GridExam.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Components\GridQuestion.ascx.cs">
+      <DependentUpon>GridQuestion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\GridQuestion.ascx.designer.cs">
+      <DependentUpon>GridQuestion.ascx</DependentUpon>
     </Compile>
     <Compile Include="Components\Header.ascx.cs">
       <DependentUpon>Header.ascx</DependentUpon>
@@ -201,6 +218,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ManageQuestions.aspx.cs">
+      <DependentUpon>ManageQuestions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageQuestions.aspx.designer.cs">
+      <DependentUpon>ManageQuestions.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\Enums\ExamStatus.cs" />
     <Compile Include="Models\Extensions\Extensions.cs" />

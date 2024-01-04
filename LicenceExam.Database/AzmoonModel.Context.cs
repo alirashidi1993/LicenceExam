@@ -10,14 +10,13 @@
 namespace LicenceExam.Database
 {
     using System;
-    using System.Data.Common;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
     public partial class AzmoonEntities : DbContext
     {
         public AzmoonEntities()
-            : base("Name=AzmoonEntities")
+            : base("name=AzmoonEntities")
         {
         }
     
@@ -28,6 +27,7 @@ namespace LicenceExam.Database
     
         public virtual DbSet<Answer> Answers { get; set; }
         public virtual DbSet<Exam> Exams { get; set; }
+        public virtual DbSet<ExamQuestion> ExamQuestions { get; set; }
         public virtual DbSet<Question> Questions { get; set; }
     }
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="efe55f4aa08c405e907f23325e42b1cf" Name="Diagram1">
+        <EntityTypeShape EntityType="AzmoonModel.Answer" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AzmoonModel.Exam" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AzmoonModel.ExamQuestion" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AzmoonModel.Question" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="AzmoonModel.FK_Answer_Question" ManuallyRouted="false" />
+        <AssociationConnector Association="AzmoonModel.FK_Question_Answer" ManuallyRouted="false" />
+        <AssociationConnector Association="AzmoonModel.FK_ExamQuestion_Exam" ManuallyRouted="false" />
+        <AssociationConnector Association="AzmoonModel.FK_ExamQuestion_Question" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

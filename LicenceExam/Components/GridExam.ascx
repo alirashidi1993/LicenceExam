@@ -15,7 +15,7 @@
                     ایجاد آزمون جدید
                 </a>
             </div>
-            <asp:GridView ID="grid_exams" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-striped w-100 grid-table mt-4" EmptyDataText="هیچ آزمونی یافت نشد" DataKeyNames="Id" OnRowDeleting="grid_exams_RowDeleting">
+            <asp:GridView ID="grid_exams" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-striped w-100 grid-table mt-4" EmptyDataText="هیچ آزمونی یافت نشد" DataKeyNames="Id" OnRowDeleting="grid_exams_RowDeleting" OnRowEditing="grid_exams_RowEditing" OnDataBinding="grid_exams_DataBinding" OnRowDataBound="grid_exams_RowDataBound">
                 <Columns>
                     <asp:BoundField DataField="Id" Visible="False" />
                     <asp:BoundField DataField="Title" HeaderText="عنوان" />
@@ -47,6 +47,7 @@
                     <asp:CommandField ButtonType="Image" HeaderText="حذف" ShowDeleteButton="True" DeleteImageUrl="~/Media/Images/delete.png">
                         <ControlStyle Height="48px" Width="48px" />
                     </asp:CommandField>
+                    <asp:BoundField HeaderText="تغییر وضیعت" />
                 </Columns>
             </asp:GridView>
         </div>
